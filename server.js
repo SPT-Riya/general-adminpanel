@@ -10,7 +10,7 @@ console.log(port);
 dotenv.config({ path: "config.env" });
 connectDB();
 app.use(express.urlencoded({ extended: true }));
-
+app.use(express.json());
 app.use("/", route);
 
 app.listen(port, () => console.log(`started at http://localhost:${port}`));

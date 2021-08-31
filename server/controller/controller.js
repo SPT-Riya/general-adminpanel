@@ -1,6 +1,7 @@
 var projectDb = require("../model/model");
 
 exports.create = (req, res) => {
+  console.log(req.body);
   const newProject = new projectDb({
     projectName: req.body.projectName,
     desc: req.body.desc,
@@ -9,7 +10,7 @@ exports.create = (req, res) => {
   newProject
     .save(newProject)
     .then((data) => res.status(200).json(data))
-    .catch((err) => res.send(500).json(err.message));
+    .catch((err) => res.status(500).json(err.message));
 };
 
 exports.find = (req, res) => {
