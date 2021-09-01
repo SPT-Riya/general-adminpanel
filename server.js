@@ -20,11 +20,11 @@ app.use((reeq, res, next) => {
     "Access",
     "Authorization"
   );
-  if (require.method === "OPTIONS") {
-    res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
-    return res.status(200).json({});
-  }
-  next();
+  //   if (require.method === "OPTIONS") {
+  //     res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
+  //     return res.status(200).json({});
+  //   }
+  //   next();
 });
 
 app.use("/", route);

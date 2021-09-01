@@ -5,6 +5,7 @@ exports.create = (req, res) => {
     projectName: req.body.projectName,
     desc: req.body.desc,
     image: req.body.image,
+    date: new Date(),
   });
   newProject
     .save(newProject)
