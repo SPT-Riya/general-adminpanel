@@ -10,6 +10,7 @@ const schema = new mongoose.Schema({
     required: true,
   },
   image: { type: String, required: false },
+  date: String,
 });
 
 const projectDb = mongoose.model("projectDb", schema);
