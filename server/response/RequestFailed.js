@@ -20,3 +20,5 @@ const RequestFailed = (res, code, error) => {
     message: errMsg,
   });
 };
+
+module.exports = RequestFailed;

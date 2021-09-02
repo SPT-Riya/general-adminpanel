@@ -1,5 +1,5 @@
 var projectDb = require("../model/model");
-const RequestFailed = require("../response/RequestFailed  ");
+const RequestFailed = require("../response/RequestFailed");
 
 exports.create = (req, res) => {
   if (!req.body.projectName.trim().length) {
