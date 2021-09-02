@@ -1,6 +1,7 @@
 const express = require("express");
 const connectDB = require("./server/datbase/connection");
 const path = require("path");
+const cors = require("cors");
 const dotenv = require("dotenv");
 const app = express();
 const route = require("./server/router/route");
