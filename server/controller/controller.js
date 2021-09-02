@@ -33,7 +33,7 @@ exports.find = (req, res) => {
   } else {
     projectDb
       .find()
-      .then((data) => res.json(data))
+      .then((data) => res.status(200).json(data))
       .catch((err) => console.log(err.message || "cant get data"));
   }
 };
